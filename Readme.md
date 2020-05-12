@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Michael Ratkewitz](https://up.htmlacademy.ru/htmlcss/28/user/1429503).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Попенко](https://up.htmlacademy.ru/htmlcss/28/user/66243).
 
 ---
 
