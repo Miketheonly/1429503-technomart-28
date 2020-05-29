@@ -185,23 +185,24 @@
     </section>
 
     <section>
+      <h2>Фильтр по каталогу</h2>
       <form action="echo.htmlacademy.ru" method="get">
-        <div>
-          <h3>Производители:</h3>
-          <div><input type="checkbox" id="box-bosch" name="bosch" checked>
-            <label for="box-bosch">Bosch</label></div>
-          <div><input type="checkbox" id="box-inter">
-            <label for="box-inter">Интерскол</label></div>
-          <div><input type="checkbox" id="box-makita" checked>
-            <label for="box-makita">Makita</label></div>
-          <div><input type="checkbox" id="box-dewalt">
-            <label for="box-dewalt">Dewalt</label></div>
-          <div><input type="checkbox" id="box-hitachi">
-            <label for="box-hitachi">Hitachi</label></div>
-        </div>      
+        <fieldset>
+          <legend>Производители:</legend>
+          <label></label><input type="checkbox" id="box-bosch" name="bosch" checked>
+          Bosch</label><br>
+          <label><input type="checkbox" id="box-inter" name="inter">
+          Интерскол</label><br>
+          <label><input type="checkbox" id="box-makita" name="makita" checked>
+          Makita</label><br>
+          <label><input type="checkbox" id="box-dewalt" name="dewalt">
+          Dewalt</label><br>
+          <label><input type="checkbox" id="box-hitachi" name="hitachi">
+          Hitachi</label><br>
+        </fieldset>      
       
-        <div>
-          <h3>Питание:</h3>
+        <fieldset>
+          <legend>Питание:</legend>
           <label>
             <input type="radio" name="power-type" value="batt" checked>
             Аккумуляторные
@@ -210,7 +211,7 @@
             <input type="radio" name="power-type" value="mains">
             Сетевые
           </label>
-        </div>
+        </fieldset>
         <button type="submit">Показать</button>
       </form>
     </section>
