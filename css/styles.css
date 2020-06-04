@@ -2,7 +2,7 @@
     /*Черным войти/регистрация, заголовки товаров, 
     сервисы и доставка, подписи полей формы, компания и контакты*/
     --basic-red: #ee3643; /*все красное*/
-    
+    --darker-red: #BA2732;
     --basic-grey: #3d546f; /*?*/
     --dark-grey: #32425c; /*адрес навбар хедеры ДОСТАВКА гарантия кредит, мои заказы, л.кабинет*/
     --darker-grey: #293449; /*самый верх и низ*/
@@ -221,6 +221,15 @@ ul, ol {
     color: #fff;
 }
 
+.offer-link:hover,
+.offer-link:focus {
+    background-color: rgba(197, 197, 197, 0.3);
+}
+
+.offer-link:active {
+    background-color: rgba(169, 169, 169, 0.3);
+}
+
 .materials {
     background-color: #ffbf47;
 }
@@ -261,15 +270,6 @@ ul, ol {
     line-height: 24px;
 }
 
-.button-link {
-    background-color: var(--basic-red);
-    color: #fff;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
 .section-top {
     background-color: var(--light-brown);
 }
@@ -281,15 +281,15 @@ ul, ol {
     text-transform: uppercase;
 }
 
-.article {
+.list-item {
     background-color: white;
     border: 1px solid #eaeaea;
 }
 
-/*.article:hover,
-.article:focus {
-    
-}*/
+.list-item:hover,
+.list-item:focus {
+    box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.15);
+}
 
 .article-buy {
     background-color: var(--basic-green);
@@ -314,6 +314,8 @@ ul, ol {
 .article-fav {
     border: 3px solid var(--basic-green);
     border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
     color: var(--dark-grey);
     font-family: Cuprum;
     font-size: 14px;
@@ -389,39 +391,21 @@ ul, ol {
     line-height: 24px;
 }
 
-.about-link {
-    background-color: var(--basic-red);
-    color: #fff;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
 .form-bottom {
     background-color: var(--light-grey);
 }
 
-.contacts-link {
-    background-color: var(--basic-red);
-    color: #fff;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
+.contacts-field input,
+.contacts-field textarea {
+    background-color: white;
+    border: 2px solid var(--basic-greylight);
+    border-radius: 2px;
+    color: #a9a9a9;
+    font-family: pt sans;
+    font-size: 13px;
+    line-height: 24px;
 }
 
-/*.contacts-field {
-    
-}
-
-.contacts-field input {
-
-}
-
-.contacta-field textarea {
-
-}*/
 .popup-bottom {
     background-color: #f1f1f1;
 }
@@ -429,7 +413,7 @@ ul, ol {
 .popup-close {
     background-color: white;
     color: black;
-    font-family: Cuprum;
+    font: inherit;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -437,8 +421,11 @@ ul, ol {
     border: none;
 }
 
-.popup-link {
+.button {
     background-color: var(--basic-red);
+    border: none;
+    /*text-align: center;
+    vertical-align: middle;*/
     color: #fff;
     font-family: Cuprum;
     font-size: 14px;
@@ -447,14 +434,8 @@ ul, ol {
     text-decoration: none;
 }
 
-.checkout-link {
-    background-color: var(--basic-red);
-    color: #fff;
-    font-family: Cuprum;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
+.button:active {
+    background-color: var(--darker-red);
 }
 
 .bottom-middle {
