@@ -9,32 +9,39 @@
   </head>
   <body class="page-body">
     <header class="header">
-      <div class="header-top">      
-        <p class="top-logo"><a aria-label="Магазин строительных материалов и инструментов Техномарт"><img src="img/design/logo-technomart.svg" alt="Техномарт"></a></p>
+      <div class="line">
+      <div class="header-top wrap">      
+        <p class="top-logo"><a class="logo-img" aria-label="Магазин строительных материалов и инструментов Техномарт"><img src="img/design/logo-technomart.svg" height="18px" width="108px" alt="Техномарт"></a></p>
         <form class="search-form" action="echo.htmlacademy.ru" method="get">
-            <label class="search-label" for="search-input">Поиск:</label>
-            <input id="search-input" type="text" name="search" placeholder="">
+            <label class="search-label" for="search-input"></label>
+            <input id="search-input" type="text" name="search" placeholder="Поиск:">
         </form>
         <a class="bookmark-label" href="blank.html" aria-label="Понравившиеся товары">Закладки: <span class="bookmarks-counter">0</span></a>
         <a class="cart-label" href="blank.html" aria-label="">Корзина: <span class="cart-counter">0</span></a>
         <a class="checkout-top" href="blank.html">Оформить заказ</a>
       </div>
-
-      <div class="header-middle">     
+    </div>
+    <div class="line2">
+      <div class="header-middle wrap">     
         <p class="page-title">
           Интернет магазин<br>
           строительных материалов<br>
           и инструментов для ремонта
         </p>
-        <div class="righthand-side">
-          <a class="phone-top" href="tel:+78125550555" aria-label="Наш телефон">+7 (812) 555-05-55</a>
-          <p class="address-top">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a class="login signin" href="blank.html" aria-label="Вход в кабинет пользователя">Войти</a>
-          <a class="login signup" href="blank.html" aria-label="Регистрация нового пользователя">Регистрация</a>
-        </div>
-      </div>
 
-      <nav class="nav">
+          <div class="address-wrap">
+            <a class="phone-top" href="tel:+78125550555" aria-label="Наш телефон">+7 (812) 555-05-55</a>
+            <p class="address-top">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="login-wrap">
+            <a class="login signin" href="blank.html" aria-label="Вход в кабинет пользователя">Войти</a>
+            <a class="login signup" href="blank.html" aria-label="Регистрация нового пользователя">Регистрация</a>
+          </div>
+
+      </div>
+    
+
+      <nav class="nav wrap">
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
           <li class="nav-item"><a class="nav-link" href="blank.html">Компания</a></li>
@@ -45,9 +52,10 @@
           <li class="nav-item"><a class="nav-link" href="blank.html">Контакты</a></li>
         </ul>
       </nav>
+    </div>
     </header>
 
-    <main>
+    <main class="main wrap">
       <h1 class="visually-hidden">Главная страница</h1>
       <section class="offers-wrapper">
         <div class="offer materials">
@@ -225,7 +233,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer wrap">
       <div class="bottom-middle">
         <a class="bottom-logo"><img src="img/design/logo-technomart.svg" alt="Логотип техномарта"></a>
         <p class="address-bottom">
