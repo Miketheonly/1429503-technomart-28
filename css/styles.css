@@ -642,6 +642,7 @@ ul, ol {
 }
 
 .text-box {
+    font-family: pt sans;
     color: black;
     font-size: 13px;
     line-height: 24px;
@@ -649,6 +650,7 @@ ul, ol {
 }
 
 .text-box1 {
+    font-family: pt sans;
     color: black;
     font-size: 13px;
     line-height: 24px;
@@ -656,6 +658,7 @@ ul, ol {
 }
 
 .text-box2 {
+    font-family: pt sans;
     color: black;
     font-size: 13px;
     line-height: 24px;
@@ -743,22 +746,27 @@ ul, ol {
 
 .bottom-middle {
     display: flex;
+    justify-content: space-between;
+}
+
+.logo-wrap {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
 }
 
 .bottom-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     background-color: var(--basic-red);
     padding: 21px 41px 20px 41px;
     box-shadow: 0 5px 0 #8a1f27;
+    margin: 0 0 27px 0;
 }
 
 .address-bottom {
     color: #f3f7f9;
     font-size: 18px;
     line-height: 24px;
+    margin: 0 0 54px 0;
 }
 
 .phone-bottom {
@@ -768,13 +776,22 @@ ul, ol {
     text-decoration: none;
 }
 
-.links-top-row {
-    display: flex;
+.links-wrapper {
+    min-width: 550px;
 }
 
+.links-top-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 37px 0 34px 0;
+}
 
 .links-bottom-row {
     display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 74px 22px;
 }
 
 .top-row-link {
