@@ -36,6 +36,23 @@
     box-sizing: border-box;
 }
 
+.new-item {
+    width: 100px;
+    padding: 7px 0 5px;
+    color: white;
+    background-color: #ee3643;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 9px;
+    right: -26px;
+
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -427,6 +444,7 @@ ul, ol {
     padding-top: 23px;
     padding-bottom: 16px;
     padding-left: 24px;
+    overflow: hidden;
 }
 
 .offer-title{
