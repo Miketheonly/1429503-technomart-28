@@ -10,17 +10,17 @@
   <body class="page-body">
     <header class="header">
       <div class="line">
-      <div class="header-top wrap">      
-        <p class="top-logo"><a class="logo-img" aria-label="Магазин строительных материалов и инструментов Техномарт"><img src="img/design/logo-technomart.svg" height="18px" width="108px" alt="Техномарт"></a></p>
-        <form class="search-form" action="echo.htmlacademy.ru" method="get">
-            <label class="search-label" for="search-input"></label>
-            <input id="search-input" type="text" name="search" placeholder="Поиск:">
-        </form>
-        <a class="bookmark-label" href="blank.html" aria-label="Понравившиеся товары">Закладки: <span class="bookmarks-counter">0</span></a>
-        <a class="cart-label" href="blank.html" aria-label="">Корзина: <span class="cart-counter">0</span></a>
-        <a class="checkout-top" href="blank.html">Оформить заказ</a>
+        <div class="header-top wrap">      
+          <p class="top-logo"><a class="logo-img" aria-label="Магазин строительных материалов и инструментов Техномарт"><img src="img/design/logo-technomart.svg" height="18px" width="108px" alt="Техномарт"></a></p>
+          <form class="search-form" action="echo.htmlacademy.ru" method="get">
+              <label class="search-label" for="search-input"></label>
+              <input id="search-input" type="text" name="search" placeholder="Поиск:">
+          </form>
+          <a class="bookmark-label" href="blank.html" aria-label="Понравившиеся товары">Закладки: <span class="bookmarks-counter">0</span></a>
+          <a class="cart-label" href="blank.html" aria-label="">Корзина: <span class="cart-counter">0</span></a>
+          <a class="checkout-top" href="blank.html">Оформить заказ</a>
+        </div>
       </div>
-    </div>
     <div class="line2">
       <div class="header-middle wrap">     
         <p class="page-title">
@@ -37,10 +37,7 @@
             <a class="login signin" href="blank.html" aria-label="Вход в кабинет пользователя">Войти</a>
             <a class="login signup" href="blank.html" aria-label="Регистрация нового пользователя">Регистрация</a>
           </div>
-
-      </div>
-    
-
+        </div>  
       <nav class="nav wrap">
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
@@ -55,9 +52,9 @@
     </div>
     </header>
 
-    <main class="main wrap">
-      <h1 class="visually-hidden">Главная страница</h1>
-      <section class="offers-wrapper">
+    <main class="main">
+    <h1 class="visually-hidden wrap">Главная страница</h1>
+      <section class="offers-wrapper wrap">
         <div class="offer materials">
           <h3 class="offer-title">Материалы</h3>
           <a class="offer-link" href="blank.html" aria-label="Ссылка на каталог стройматериалов">На любой вкус</a>
@@ -78,23 +75,31 @@
           <h3 class="offer-title">Доставка</h3>
           <a class="offer-link" href="blank.html" aria-label="Ссылка на информацию о доставке">Бесплатно</a>
         </div>
-        <div class="slider">
-          <div class="slide drills">
-            <h3 class="slider-title">Дрели</h3>
-            <p class="slider-slogan">Соседям на радость!</p>
-            <img class="slider-img" src="img/content/worker-drill.jpg" alt="" aria-hidden="true">
-            <a class="common button1" href="blank.html" aria-label="Ссылка на каталог дрелей">Открыть каталог</a>
-          </div>
-          <div class="slide perfs">
-            <div class="slider-shade"><h3 class="slider-title">Перфораторы</h3>
-            <p class="slider-slogan">Настоящие мужские игрушки</p></div>
-            <img class="slider-img" src="img/content/worker-perf.jpg" alt="" aria-hidden="true">
-            <a class="common button1" href="cat-page.html" aria-label="Ссылка на каталог перфораторов">Открыть каталог</a>
-          </div>
-        </div>
+        <section class="slider img-1">
+            <ul class="slide-list">
+                <li class="slide slide-current">
+                    <h3 class="slider-title">Дрели</h3>
+                    <p class="slider-slogan">Соседям на радость!</p>        
+                    <a class="common button1" href="blank.html" aria-label="Ссылка на каталог дрелей">Открыть каталог</a>
+                </li>
+                <li class="slide">
+                    <h3 class="slider-title">Перфораторы</h3>
+                    <p class="slider-slogan">Настоящие мужские игрушки</p></div>            
+                    <a class="common button1" href="cat-page.html" aria-label="Ссылка на каталог перфораторов">Открыть каталог</a>
+                </li>
+            </ul>
+            <div class="slider-arrows">
+                <button class="arrow left" type="button" aria-label="Предыдущий слайд"></button>
+                <button class="arrow right" type="button" aria-label="Следующий слайд"></button>
+            </div>
+            <div class="slider-controls">
+                <button type="button" aria-label="Первый слайд"></button>
+                <button class="current" type="button" aria-label="Второй слайд"></button>
+            </div>
+        </section>
       </section>
   
-      <section class="popular-goods-wrapper">
+      <section class="popular-goods-wrapper wrap">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="section-top">
           <p class="section-title">Популярные товары:</p>
@@ -152,7 +157,7 @@
         </ul>
       </section>
       
-      <section class="popular-makes-wrapper">
+      <section class="popular-makes-wrapper wrap">
         <h2 class="visually-hidden">Популярные производители</h2>
         <div class="section-top">
           <p class="section-title">Популярные производители:</p>
@@ -185,44 +190,47 @@
           </li>
         </ul>
       </section>
-
-      <section class="services-wrapper">
-        <div class="serices-top">
-          <h3 class="services-title">Сервисы</h3>
-          <p class="text-box">Хороший интернет-магазин отличается от плохого не только ценами!<br>
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <div class="services-slider">
-            <div>
-              <button></button>
-              <button></button>
-              <button></button>
+      <div class="line2">
+        <section class="services-wrapper wrap">
+            <div class="services-top">
+            <h3>Сервисы</h3>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             </div>
-            <div class="services-slide">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо <br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!</p>
+            <div class="services-slider">
+                <div class="services-controls">
+                <button type="button">Доставка</button>
+                <button type="button">Гарантия</button>
+                <button class="active" type="button">Кредит</button>
+                </div>
+                <ul class="slide-list-2">
+                    <li class="services-1 slide">
+                        <h3 class="services-title">Доставка</h3>
+                        <p class="services-text">Мы с удовольствием доставим ваш товар прямо<br>
+                        к вашему подъезду совершенно бесплатно!<br>
+                        Ведь мы неплохо заработаем,<br>
+                        поднимая его на ваш этаж!</p>
+                    </li>
+                    <li class="services-2 slide">
+                        <h3 class="services-title">Гарантия</h3>
+                        <p class="services-text">Мы с удовольствием доставим ваш товар прямо<br>
+                        к вашему подъезду совершенно бесплатно!<br>
+                        Ведь мы неплохо заработаем,<br>
+                        поднимая его на ваш этаж!</p>
+                    </li>
+                    <li class="services-3 slide current">
+                        <h3 class="services-title">Кредит</h3>
+                        <p class="services-text">Залезть в долговую яму стало проще!<br>
+                        Кредитные консультанты придут вам на помощь.<br>
+                        </p>
+                        <a href="#">Отправить заявку</a>
+                    </li>
+                </ul>
             </div>
-            <div class="services-slide">
-              <h3>Гарантия</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо <br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!</p>
-            </div>
-            <div class="services-slide">
-              <h3>Кредит</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо <br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!</p>
-            </div>
-          </div>
+            </section>
         </div>
-      </section>
 
-      <section class="about-wrapper">
+      <section class="about-wrapper wrap">
         <div class="about-section">
           <h2 class="about-title">Компания &laquo;Техномарт&raquo;</h2>
           <p class="text-box">
@@ -290,9 +298,25 @@
           <section class="section-social">
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="social-list">
-              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Вконтакте"></a></li>
-              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Фейсбук"></a></li>
-              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Инстаграм"></a></li>
+              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Вконтакте">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="26" height="15" viewBox="0 0 128 76">
+                <path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
+                </a>
+              </li>
+              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Фейсбук">
+                <span class="visually-hidden">Фэйсбук</span>
+                <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+                </svg>
+                </a>
+              </li>
+              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Инстаграм">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+                </svg>
+                </a></li>
             </ul>
           </section>
           <p class="bottom-link-title">Обратная связь<br>
@@ -313,24 +337,24 @@
     <div class="popup form">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="contacts-form" action="echo.htmlacademy.ru" method="post">
-        <p class="contacts-field">
+        <p class="contacts-field cred">
           <label for="field-name">Ваше имя:</label>
           <input id="field-name" type="text" name="username" placeholder="Имя Фамилия">
         </p>
-        <p class="contacts-field">
+        <p class="contacts-field cred">
           <label for="field-email">Ваш e-mail:</label>
           <input id="field-email" type="email" name="email" placeholder="email@example.com">
         </p>
-        <p class="contacts-field">
+        <p class="contacts-field area">
           <label for="field-text">Текст письма:</label>
           <textarea id="field-text" rows="5">В свободной форме</textarea>
-        </p>
-        <div class="popup-bottom">
-          <button class="checkout button" type="submit" value="Оформить заказ">Оформить заказ</button> 
-        </div>       
+        </p>     
       </form>
-      <button class="close-popup" type="button">Крестик</button>
+      <!-- <button class="close-popup" type="button">Крестик</button> -->
     </div>
+    <div class="popup-bottom">
+      <button class="common" type="submit" value="Оформить заказ">Оформить заказ</button> 
+    </div>  
     
   </body>
 </html>
