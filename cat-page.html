@@ -12,7 +12,7 @@
     <header class="header">
       <div class="line">
         <div class="header-top wrap">      
-          <a class="logo-img" aria-label="Магазин строительных материалов и инструментов Техномарт" href="#"><img src="img/design/logo-technomart.svg" height="18px" width="108px" alt="Техномарт"></a>
+          <a class="logo-img" aria-label="Магазин строительных материалов и инструментов Техномарт" href="index.html"><img src="img/design/logo-technomart.svg" height="18px" width="108px" alt="Техномарт"></a>
           <form class="search-form" action="echo.htmlacademy.ru" method="get">
               
               <label class="search-label" for="search-input"></label>
@@ -22,7 +22,7 @@
                 </svg>
           </form>
           <a class="bookmark-label" href="blank.html" aria-label="Понравившиеся товары">Закладки: <span class="bookmarks-counter">0</span></a>
-          <a class="cart-label" href="blank.html" aria-label="">Корзина: <span class="cart-counter">10</span></a>
+          <a class="cart-label label-current" href="blank.html" aria-label="">Корзина: <span class="cart-counter">10</span></a>
           <a class="checkout-top" href="blank.html">Оформить заказ</a>
         </div>
       </div>
@@ -76,10 +76,15 @@
     <main class="cat-page-main wrap">
   
       <ol class="breadcrumbs grid-col-both">
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Домой</a></li>
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="blank.html">Каталог</a></li>
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="blank.html">Инструмент</a></li>
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link">Перфораторы</a></li>
+        <li class=""><a class="breadcrumbs-link" href="index.html" aria-label="На главную">
+          <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE"/>
+            <path d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z" fill="#C1C6CE"/>
+            </svg>
+        </a></li>
+        <li class=""><a class="breadcrumbs-link" href="blank.html">Каталог</a></li>
+        <li class=""><a class="breadcrumbs-link" href="blank.html">Инструмент</a></li>
+        <li class="breadcrumbs-current"><a class="breadcrumbs-link">Перфораторы</a></li>
       </ol>
       <div class="cat-page-header grid-col-both">
         <h1 class="header-title">Перфораторы</h1>
@@ -93,50 +98,61 @@
           <li><button class="custom" type="button">По типу</button></li>
           <li><button class="custom" type="button">По функционалу</button></li>
         </ul>
-      </div>
-          
-      <div class="filter-cost grid-col-1">
-        <h3 class="aside-heading">Цена:</h3>
-        <p class="adjuster pale"></p>
-        <div class="numbers">
-          <p class="range pale"><span class="range-low">0</span></p>
-          —
-          <p class="range pale"><span class="range-high">30000</span></p>
+        <div class="sort">
+          <svg class="sort-up sort-current" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+            <path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
+            </svg>
+            <svg class="sort-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+              <path d="M5.5 10L0 0H11" fill="#C5C5C5"/>
+              </svg>
         </div>
-     
+      </div>
+        <section class="filters grid-col-1">
+          <form class="filters-form" action="echo.htmlacademy.ru" method="get">
 
-        
-          <form class="grid-col-1" action="echo.htmlacademy.ru" method="get">
-            <fieldset>
+            <fieldset class="filter-field price-ranger">
+              <legend class="aside-heading">Цена:</legend>
+              <div class="range-filter">
+                <div class="range-ctrls pale">
+                  <div class="prog-bar">
+                    <div class="prog-bar-select"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-ctrls">
+                  <label class="min-price">
+                    <input class="pale" type="number" name="min-price" value="0">
+                  </label> —
+                  <label class="max-price">
+                    <input class="pale" type="number" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-field makes-ranger">
               <legend class="aside-heading">Производители:</legend>
-              <label><input type="checkbox" id="box-bosch" name="bosch" checked>
-              Bosch</label><br>
-              <label><input type="checkbox" id="box-inter" name="inter">
-              Интерскол</label><br>
-              <label><input type="checkbox" id="box-makita" name="makita" checked>
-              Makita</label><br>
-              <label><input type="checkbox" id="box-dewalt" name="dewalt">
-              Dewalt</label><br>
-              <label><input type="checkbox" id="box-hitachi" name="hitachi">
-              Hitachi</label><br>
+              <ul>
+                <li class="filter-option"><input class="visually-hidden checkbox" type="checkbox" id="box-bosch" name="bosch" checked><label>Bosch</label></li>
+                <li class="filter-option"><input class="visually-hidden checkbox" type="checkbox" id="box-inter" name="inter"><label>Интерскол</label></li>
+                <li class="filter-option"><input class="visually-hidden checkbox" type="checkbox" id="box-makita" name="makita" checked><label>Makita</label></li>
+                <li class="filter-option"><input class="visually-hidden checkbox" type="checkbox" id="box-dewalt" name="dewalt"><label>Dewalt</label></li>
+                <li class="filter-option"><input class="visually-hidden checkbox" type="checkbox" id="box-hitachi" name="hitachi"><label>Hitachi</label></li>
+            </ul>
             </fieldset>      
           
-            <fieldset>
+            <fieldset class="filter-field type-ranger">
               <legend class="aside-heading">Питание:</legend>
-              <label>
-                <input type="radio" name="power-type" value="batt" checked>
-                Аккумуляторные
-              </label><br>
-              <label>
-                <input type="radio" name="power-type" value="mains">
-                Сетевые
-              </label>
+              <ul>
+                <li class="filter-option"><input class="visually-hidden radio" type="radio" name="power-type" value="batt" checked><label>Аккумуляторные</label></li>
+                <li class="filter-option"><input class="visually-hidden radio" type="radio" name="power-type" value="mains"><label>Сетевые</label></li>
+              </ul>
             </fieldset>
             <button type="submit">Показать</button>
           </form>
-        </div>
-     
-     
+        </section>
+
         <h2 class="visually-hidden">Карточки товара</h2>
         <ul class="catalogue-list">
           <li class="list-item"><article class="article">
@@ -327,17 +343,35 @@
           <section class="section-social">
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="social-list">
-              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Вконтакте"></a></li>
-              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Фейсбук"></a></li>
-              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Инстаграм"></a></li>
+              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Вконтакте">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="26" height="15" viewBox="0 0 128 76">
+                <path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
+                </a>
+              </li>
+              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Фейсбук">
+                <span class="visually-hidden">Фэйсбук</span>
+                <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+                </svg>
+                </a>
+              </li>
+              <li class="social-item"><a class="social-link" href="blank.html" aria-label="Ссылка Инстаграм">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+                </svg>
+                </a></li>
             </ul>
           </section>
+          <div class="khuy">
           <p class="bottom-link-title">Обратная связь<br>
             <a class="bottom-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="bottom-link-title">Разработано –<br>
             <a class="bottom-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
           </p>
+        </div>
         </div>
       </div>
     </footer>
