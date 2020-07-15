@@ -1859,7 +1859,7 @@ input[type=number] {
 
 .form {
     top: auto;
-    bottom: 352px;
+    bottom: 100px;
     width: 620px;
     padding: 0;
 }
@@ -1867,10 +1867,7 @@ input[type=number] {
 .confirm {
     width: 620px;
     height: 282px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     padding-top: 66px;
 }
 
@@ -1882,6 +1879,7 @@ input[type=number] {
 
 .confirm-text {
     margin: 0;
+    margin-bottom: 67px;
 }
 
 .back {
@@ -1898,6 +1896,7 @@ input[type=number] {
     padding: 0;
     padding-top: 11px;
     padding-bottom: 9px;
+    cursor: pointer;
 }
 
 .contacts-form {
