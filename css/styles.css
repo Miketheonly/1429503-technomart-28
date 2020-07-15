@@ -668,6 +668,10 @@ ul, ol {
     border-radius: 3px;
 }
 
+.checkbox + label:hover::before {
+    border-color: #b5b5b5;
+}
+
 .checkbox:checked + label::before {
     content: "";
     background-image: url(../img/design/checkbox-on.svg);
@@ -688,6 +692,10 @@ ul, ol {
     height: 25px;
     border: 3px solid var(--basic-greylight);
     border-radius: 50%;
+}
+
+.radio + label:hover::before {
+    border-color: #b5b5b5;
 }
 
 .radio:checked + label::after {
@@ -1212,14 +1220,14 @@ input[type=number] {
 }
 
 .min-height {
-    min-height: 164px;
+    min-height: 170px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: contain;
     background-color: white;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 }
 
 .article-title {
@@ -1276,7 +1284,7 @@ input[type=number] {
     display: none;
     margin-left: -3px;
     margin-top: -3px;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 
 .article:hover .actions {
@@ -1804,6 +1812,12 @@ input[type=number] {
         color: inherit;
 }
 
+.social-link:focus,
+.social-link:hover,
+.social-link:active {
+    background-color: var(--basic-red);
+}
+
 .khuy {
     display: flex;
 }
@@ -1897,7 +1911,8 @@ input[type=number] {
 }
 
 .map {
-    display: none;
+    /* display: none; */
+    display: flex;
     width: 943px;
     height: 449px;
 }
@@ -1973,5 +1988,6 @@ input[type=number] {
 }
 
 .popup {
-    display: none;
+    /* display: none; */
+    display: block;
 }
