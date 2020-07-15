@@ -48,7 +48,7 @@
     text-align: center;
     transform: rotate(45deg);
     position: absolute;
-    top: 9px;
+    top: 6px;
     right: -26px;
 
 }
@@ -78,6 +78,7 @@ input[type="radio"].visually-hidden {
 
 body {
     font-family: Cuprum, sans-serif;
+    margin: 0;
 }
 
 .line {   
@@ -175,13 +176,27 @@ ul, ol {
     opacity: 1;
 }
 
-.bookmark-label,
-.cart-label {
+.bookmark-label {
     display: inline-block;
-    width: 150px;
+    padding-right: 21px;
     padding-top: 9px;
     padding-bottom: 9px;
-    padding-left: 43px;
+    padding-left: 35px;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    margin-right: 18px;
+}
+
+.cart-label {
+    display: inline-block;
+    padding-right: 21px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 35px;
     background-color: transparent;
     font-size: 18px;
     line-height: 24px;
@@ -197,9 +212,8 @@ ul, ol {
     height: 16px;
     opacity: 0.3;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
+    top: 13px;
+    left: 11px;
 }
 
 .cart-label::before {
@@ -209,9 +223,8 @@ ul, ol {
     height: 15px;
     opacity: 0.3;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
+    top: 13px;
+    left: 11px;
 }
 
 .bookmark-label:hover::before,
@@ -266,10 +279,10 @@ ul, ol {
 }
 
 .page-title {
-    margin: 0 0 0 31px;
+    margin: -3px 0 0 31px;
     font-style: italic;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 24px;
     color: var(--basic-red);
 }
 
@@ -281,8 +294,8 @@ ul, ol {
 
 .phone-top {
     border: 3px solid white;
-    padding: 7px 45px 8px 74px;
-    /*margin-top: 42px;*/
+    padding: 4px 42px 5px 71px;
+    margin-left: 94px;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
@@ -308,11 +321,12 @@ ul, ol {
     color: var(--dark-grey);
     margin-bottom: 40px;
     margin-top: 3px;
+    margin-left: 92px;
 }
 
 .login-wrap {
     font-size: 0;
-    
+    margin-left: auto;
 }
 
 .login {
@@ -393,10 +407,23 @@ ul, ol {
     justify-content: center;
     padding: 0;
     padding-top: 7px;
+    margin-right: 2px;
 }
 
 .submenu-item:last-child {
     padding-left: 31px;
+    position: relative;
+}
+
+.submenu-item:last-child::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 14px;
+    width: 4px;
+    height: 4px;
+    background-color: var(--dark-grey);
+    border-radius: 50%;
 }
 
 .submenu-link {
@@ -424,8 +451,8 @@ ul, ol {
     flex-wrap: wrap;
     background-color: var(--dark-grey);
     box-shadow: inset 0px -5px 0px #293449;
-    justify-content: center;
-    padding: 0;
+    justify-content: space-between;
+    padding: 0 23px 0 25px;
     margin: 0;
 }
 
@@ -455,7 +482,7 @@ ul, ol {
 .cat-page-main {
     display: grid;
     grid-template-columns: 220px 1fr;
-    column-gap: 21px;
+    column-gap: 20px;
 }
 
 .grid-col-1 {
@@ -476,14 +503,14 @@ ul, ol {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-top: 21px;
+    margin-top: 18px;
     margin-bottom: 20px;
     font-family: PT sans;
 }
 
 .breadcrumbs li {
     position: relative;
-    margin-right: 42px;
+    margin-right: 41px;
 }
 
 .breadcrumbs li:first-child a {
@@ -561,12 +588,14 @@ ul, ol {
 .filter-top ul {
     display: flex;
     justify-content: space-between;
-    flex-grow: 3;
+    flex-grow: 1;
     padding: 0;
     padding-right: 46px;
-    padding-left: 140px;
+    padding-left: 6px;
     margin: 0;
+    margin-bottom: 4px;
 }
+
 
 .custom {
     background-color: transparent;
@@ -653,19 +682,19 @@ ul, ol {
 .radio + label::before {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -2px;
     left: -35px;
-    width: 23px;
-    height: 23px;
-    border: 2px solid var(--basic-greylight);
+    width: 25px;
+    height: 25px;
+    border: 3px solid var(--basic-greylight);
     border-radius: 50%;
 }
 
 .radio:checked + label::after {
     content: "";
     position: absolute;
-    top: 4px;
-    left: -28px;
+    top: 6px;
+    left: -27px;
     width: 9px;
     height: 9px;
     background-color: var(--basic-greylight);
@@ -692,20 +721,35 @@ ul, ol {
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0;
-}
-
-.price-ranger {
-    padding-bottom: 25px;
+    margin: -1px 0 11px -2px;
 }
 
 .makes-ranger {
-    padding: 16px 0 27px 0;
+    margin-top: 18px;
+}
+
+.makes-ranger ul {
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+
+.type-ranger {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    border: none;
+}
+
+.type-ranger ul {
+    padding-top: 13px;
+}
+
+.type-ranger li {
+    margin-bottom: 23px;
 }
 
 .range-filter {
-    margin-top: 11px;
-}
+    margin-bottom: 25px;
+} 
 
 .range-ctrls {
     position: relative;
@@ -732,9 +776,9 @@ ul, ol {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    width: 4px;
-    height: 4px;
-    padding: 0;
+    width: 0;
+    height: 0;
+    padding: 2px;
     background-color: #ababab;
     border: 8px solid white;
     border-radius: 50%;
@@ -764,7 +808,7 @@ ul, ol {
 
 .price-ctrls input {
     width: 95px;
-    padding: 10px;
+    padding: 7px;
     text-align: center;
     border: none;
     font-family: PT sans;
@@ -792,15 +836,17 @@ input[type=number] {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    row-gap: 18px;
+    column-gap: 20px;
 }
 
 .page-counter ol {
     display: flex;
     padding: 0;
     margin: 0;
-    margin-top: 48px;
+    margin-top: 49px;
     margin-bottom: 59px;
+    margin-left: -2px;
 }
 
 .pg-item {
@@ -850,6 +896,33 @@ input[type=number] {
     color: white;
 }
 
+.page-counter ol button {
+    width: 140px;
+}
+
+.cat-page-description {
+    color: black;
+    padding-top: 63px;
+    padding-bottom: 67px;
+}
+
+.cat-page-description h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.cat-page-description p {
+    font-family: PT sans;
+    font-size: 13px;
+    line-height: 25px;
+    margin: 0;
+}
+
 /* ================================== */
 
 .offers-wrapper {
@@ -863,9 +936,9 @@ input[type=number] {
 
 .offer {
     position: relative;
-    padding-top: 23px;
+    padding-top: 20px;
     padding-bottom: 16px;
-    padding-left: 24px;
+    padding-left: 22px;
     overflow: hidden;
 }
 
@@ -986,7 +1059,7 @@ input[type=number] {
 
 .slide-list {
     margin: 0;
-    padding: 23px 0 27px 24px;
+    padding: 23px 0 0 24px;
     list-style: none;
   }
 
@@ -1086,7 +1159,7 @@ input[type=number] {
     flex-wrap: wrap;
     align-items: center;
     background-color: var(--light-brown);
-    padding: 29px 19px 28px 30px;
+    padding: 23px 14px 28px 28px;
     margin: 0 0 20px 0;
 }
 
@@ -1119,7 +1192,7 @@ input[type=number] {
 }
 
 .list-item article {
-    min-height: 318px;
+    min-height: 316px;
 }
 
 .list-item:hover,
@@ -1132,16 +1205,21 @@ input[type=number] {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    position: relative;
+    width: 100%;
+    font-family: PT sans;
+    padding-bottom: 21px;
 }
 
 .min-height {
     min-height: 164px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: contain;
     background-color: white;
-    position: relative;
+    margin-bottom: 15px;
 }
 
 .article-title {
@@ -1150,6 +1228,13 @@ input[type=number] {
     font-weight: bold;
     line-height: 20px;
     text-align: center;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.article-img {
+    margin-top: 4px;
+    margin-right: 11px;
 }
 
 .article-cost-old {
@@ -1158,13 +1243,13 @@ input[type=number] {
     line-height: 18px;
     text-transform: uppercase;
     text-decoration: line-through;
-    margin: 0 0 13px 0
+    margin: 0;
 }
 
 .article-cost-new {
     position: relative;
-    padding: 10px 0 10px 0;
-    margin: auto 0 21px 0;
+    padding: 10px 22px 10px 33px;
+    margin: auto 0 0 -8px;
     background-color: var(--basic-red);
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -1189,14 +1274,24 @@ input[type=number] {
 
 .actions {
     display: none;
+    margin-left: -3px;
+    margin-top: -3px;
+    margin-bottom: 18px;
+}
+
+.article:hover .actions {
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+}
+
+.article:hover .item-pic {
+    display: none;
 }
 
 .article-buy {
+    display: block;
+    width: 135px;
     background-color: var(--basic-green);
     box-shadow: inset 0 -3px 0 #367315;
     border-radius: 2px;
@@ -1205,6 +1300,23 @@ input[type=number] {
     line-height: 18px;
     text-transform: uppercase;
     text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 53px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.article-buy::before {
+    content: "";
+    background-image: url(../img/design/icon-cart.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    opacity: 30%;
+    position: absolute;
+    top: 10px;
+    left: 30px;
 }
 
 .article-buy:hover,
@@ -1217,6 +1329,7 @@ input[type=number] {
 }
 
 .article-fav {
+    width: 135px;
     border: 3px solid var(--basic-green);
     border-radius: 2px;
     text-align: center;
@@ -1226,6 +1339,9 @@ input[type=number] {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    background-color: transparent;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 
 .article-fav:hover,
@@ -1254,7 +1370,7 @@ input[type=number] {
 
 .services-wrapper {
     background-color: var(--basic-background);
-    padding-top: 64px;
+    padding-top: 63px;
     padding-bottom: 99px;
 }
 
@@ -1267,6 +1383,7 @@ input[type=number] {
 }
 
 .services-top h3 {
+    font-weight: normal;
     color: black;
     font-size: 30px;
     line-height: 30px;
@@ -1295,6 +1412,8 @@ input[type=number] {
     position: relative;
 }
 
+
+
 .services-controls::after {
     content: "";
     background-image: url(../img/design/side-shadow.png);
@@ -1317,7 +1436,8 @@ input[type=number] {
     line-height: 30px;
     border: none;
     box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
-    padding: 13px 0 17px 22px;
+    padding: 14px 0 18px 22px;
+    cursor: pointer;
 }
 
 .services-controls .active {
@@ -1362,8 +1482,10 @@ input[type=number] {
 }
 
 .services-title {
+    font-weight: normal;
     margin: 0;
-    padding: 0 0 30px 0;
+    margin-top: -2px;
+    padding: 0 0 28px 0;
     color: var(--dark-grey);
     font-size: 30px;
     line-height: 30px;
@@ -1375,7 +1497,7 @@ input[type=number] {
     color: black;
     font-family: PT sans;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 25px;
 }
 
 .services-3 .services-text {
@@ -1402,7 +1524,7 @@ input[type=number] {
     color: black;
     font-size: 13px;
     line-height: 24px;
-    margin: 0 0 24px 0;
+    margin: 0 0 26px 0;
 }
 
 .text-box1 {
@@ -1418,12 +1540,12 @@ input[type=number] {
     color: black;
     font-size: 13px;
     line-height: 24px;
-    margin: 0 0 24px 0;
+    margin: 0 0 32px 0;
 }
 
 .about-wrapper {
     display: flex;
-    margin: 70px auto;
+    margin: 70px auto 69px;
 }
 
 .about-section {
@@ -1431,6 +1553,7 @@ input[type=number] {
 }
 
 .about-title {
+    font-weight: normal;
     color: black;
     font-size: 30px;
     line-height: 30px;
@@ -1440,6 +1563,7 @@ input[type=number] {
 
 .partners-list {
     margin: 0;
+    padding-left: 37px;
 }
 
 .partners-item {
@@ -1462,12 +1586,12 @@ input[type=number] {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -40px;
+    left: -37px;
 }
 
 .contacts-map {
     display: block;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
 }
 
 .common {
@@ -1482,7 +1606,7 @@ input[type=number] {
     text-transform: uppercase;
     text-decoration: none;
     padding-top: 11px;
-    padding-bottom: 9px;
+    padding-bottom: 10px;
 }
 
 .common:hover,
@@ -1534,7 +1658,7 @@ input[type=number] {
 
 .bottom-logo {
     background-color: var(--basic-red);
-    padding: 21px 41px 20px 41px;
+    padding: 19px 41px 15px 41px;
     box-shadow: 0 5px 0 #8a1f27;
     margin: 0 0 27px 0;
 }
@@ -1543,7 +1667,7 @@ input[type=number] {
     color: #f3f7f9;
     font-size: 18px;
     line-height: 24px;
-    margin: 0 0 54px 0;
+    margin: 0 0 54px 5px;
 }
 
 .phone-bottom {
@@ -1562,7 +1686,7 @@ input[type=number] {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
-    margin: 37px 0 34px 0;
+    margin: 37px -1px 34px 3px;
 }
 
 .links-bottom-row {
@@ -1570,7 +1694,7 @@ input[type=number] {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0 0 74px 22px;
+    margin: 0 0 74px 26px;
 }
 
 .top-row-link {
@@ -1619,8 +1743,10 @@ input[type=number] {
     color: #fff;
     font-size: 16px;
     line-height: 18px;
-    margin: 0;
+    margin: 1px;
     margin-right: 161px;
+    margin-left: 1px;
+
 }
 
 .bottom-link-title {
